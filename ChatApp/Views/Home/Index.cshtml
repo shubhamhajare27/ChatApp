@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Messanger</h1>
+<br />
+<br />
+<label>UserName</label>
+<input type="text" id="userid" class="alert-info" />
+<br />
+<br />
+<label>Message</label>
+<input type="text" id="msgid" class="alert-info" />
+<br/>
+<br/>
+<input type="button" id="buttonid" value ="Click Me" class="btn-danger" />
+<h3>Chat</h3>
+<div id="chat-message"></div>
+@section scripts{
+    <script src="~/Scripts/jquery.signalR-2.4.1.min.js" ></Script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/Signalr.js"></script>
+}
